@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Martina Cottura · Analista de datos</title>
+  <meta name="description" content="Martina Cottura, analista de datos. Python · SQL · Power BI. Convierto datos de clientes y ventas en decisiones comerciales.">
+  <meta property="og:title" content="Martina Cottura · Analista de datos">
+  <meta property="og:description" content="Python · SQL · Power BI. Convierto datos de clientes y ventas en decisiones comerciales.">
+  <meta property="og:image" content="https://martina-cottura.github.io/assets/cumbres_analisis_clientes.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="nav__brand" href="#inicio">Martina Cottura</a>
+      <nav class="nav__links" aria-label="Secciones">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1. Inicio -->
+    <section id="inicio" class="hero">
+      <span class="blob blob--sage" aria-hidden="true"></span>
+      <span class="blob blob--sand" aria-hidden="true"></span>
+      <div class="wrap hero__grid">
+      <img class="hero__photo" src="assets/martina_cottura.jpg" width="560" height="560" alt="Foto de Martina Cottura">
+      <div class="hero__inner">
+        <p class="eyebrow">Analista de datos</p>
+        <h1>Martina Cottura<span class="visually-hidden"> · Analista de datos</span></h1>
+        <span class="rule" aria-hidden="true"></span>
+        <ul class="pills" aria-label="Herramientas principales">
+          <li>Python</li><li>SQL</li><li>Power BI</li>
+        </ul>
+        <p class="hero__lead">Convierto datos de clientes y ventas en decisiones comerciales.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="https://github.com/martina-cottura" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/martinacottura" target="_blank" rel="noopener">CV en LinkedIn</a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- 2. Sobre mí -->
+    <section id="sobre-mi" class="section">
+      <div class="wrap about">
+        <h2>Sobre mí</h2>
+        <div class="about__body">
+          <p>Soy licenciada en Sociología, con más de 4 años en investigación social cuantitativa, entre ellos la coordinación de campo en el Censo Nacional 2022 del INDEC, y más de 8 años de experiencia en ventas, tanto en el sector retail como en distribución.</p>
+          <p>Hago consultoría freelance de datos. Estoy basada en Mar del Plata, Argentina, y abierta a trabajo remoto.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Proyectos -->
+    <section id="proyectos" class="section section--alt">
+      <div class="wrap">
+        <h2>Proyectos</h2>
+
+        <!-- Para sumar un proyecto: copiar un <article class="project"> completo dentro de .projects -->
+        <div class="projects">
+
+          <article class="project">
+            <a class="project__media" href="https://github.com/martina-cottura/customer_analytics_retail_Python-Mysql-PowerBI" target="_blank" rel="noopener">
+              <img src="assets/cumbres_analisis_clientes.png" width="2075" height="1200" loading="lazy"
+                   alt="Página del dashboard de Power BI con la segmentación RFM: peso de cada segmento en clientes y facturación, frecuencia, ticket y recencia">
+            </a>
+            <div class="project__body">
+              <p class="badge">Datos sintéticos</p>
+              <h3>Customer Analytics · Cumbres Outdoor &amp; Deportes</h3>
+              <p>Análisis de clientes de un retailer deportivo ficticio, con datos sintéticos del período <span class="nowrap">2023-2025</span>.</p>
+              <p class="question"><span class="question__label">Pregunta de negocio</span>¿Cómo se distribuye el valor de la cartera de clientes y a qué clientes inactivos conviene contactar primero?</p>
+              <p class="finding"><span class="finding__label">Hallazgo clave</span>81 de los 269 clientes en riesgo concentran el 62,7% de la facturación histórica en riesgo.</p>
+              <ul class="tags" aria-label="Herramientas">
+                <li>Python</li><li>MySQL</li><li>Power BI</li><li>DAX</li>
+              </ul>
+              <a class="btn btn--primary" href="https://github.com/martina-cottura/customer_analytics_retail_Python-Mysql-PowerBI" target="_blank" rel="noopener">Ver proyecto</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <a class="project__media" href="https://github.com/martina-cottura/airbnb-barcelona-2025-python-sql-powerbi" target="_blank" rel="noopener">
+              <img src="assets/airbnb_oferta.jpg" width="1407" height="792" loading="lazy"
+                   alt="Página del dashboard de Power BI con el mapa y los indicadores de la oferta de Airbnb en Barcelona">
+            </a>
+            <div class="project__body">
+              <p class="badge">Datos públicos · Proyecto en equipo</p>
+              <h3>Mercado de Airbnb en Barcelona 2025</h3>
+              <p>Mercado de viviendas turísticas con datos públicos de Inside Airbnb (septiembre de 2025). Proyecto académico en equipo.</p>
+              <p class="question"><span class="question__label">Pregunta de negocio</span>¿Cuál es la dimensión y la composición del mercado de Airbnb en Barcelona en volumen, precios, tipo de alojamiento y cumplimiento de licencias?</p>
+              <p class="finding"><span class="finding__label">Hallazgo clave</span>El 91,2% de los anuncios es de hosts con más de un anuncio, y el 59,6% está en Eixample y Ciutat Vella.</p>
+              <ul class="tags" aria-label="Herramientas">
+                <li>Python</li><li>MySQL</li><li>Power BI</li><li>DAX</li>
+              </ul>
+              <a class="btn btn--primary" href="https://github.com/martina-cottura/airbnb-barcelona-2025-python-sql-powerbi" target="_blank" rel="noopener">Ver proyecto</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Trabajos anteriores -->
+    <section id="trabajos" class="section">
+      <div class="wrap">
+        <h2>Trabajos anteriores</h2>
+        <p class="section__intro">Análisis de datos en investigación social y de mercado.</p>
+        <!-- Para sumar un trabajo: copiar un <article class="work"> -->
+        <div class="works">
+          <article class="work">
+            <h3>Chicas en Tecnología</h3>
+            <p>Análisis de datos públicos. <span class="todo">[completar: qué analizaste y año]</span></p>
+            <a class="link" href="#">Ver trabajo <span class="todo">[completar link]</span></a>
+          </article>
+          <article class="work">
+            <h3>Tesis de grado · Licenciatura en Sociología</h3>
+            <p>Trabajo con la Encuesta Permanente de Hogares (EPH). <span class="todo">[completar: título y año]</span></p>
+            <a class="link" href="#">Ver tesis <span class="todo">[completar link]</span></a>
+          </article>
+          <article class="work">
+            <h3>AnyBody · Encuesta nacional de talles</h3>
+            <p>Construcción de la encuesta y análisis de los resultados. <span class="todo">[completar: año]</span></p>
+            <a class="link" href="#">Ver trabajo <span class="todo">[completar link]</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Habilidades -->
+    <section id="habilidades" class="section section--alt">
+      <div class="wrap">
+        <h2>Habilidades</h2>
+        <h3 class="skills__title">Análisis de datos</h3>
+        <ul class="skills">
+          <li>Python (pandas)</li>
+          <li>SQL (MySQL)</li>
+          <li>Power BI (modelado y DAX)</li>
+          <li>Calidad y validación de datos</li>
+          <li>Segmentación de clientes</li>
+          <li>Comunicación de resultados a negocio</li>
+        </ul>
+        <h3 class="skills__title">Transferibles de la investigación social cuantitativa</h3>
+        <ul class="skills skills--alt">
+          <li>Diseño de encuestas y cuestionarios</li>
+          <li>Coordinación de relevamientos de campo</li>
+          <li>Trabajo con microdatos de encuestas oficiales (EPH)</li>
+          <li>Análisis estadístico con SPSS</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Contacto -->
+    <section id="contacto" class="section contact">
+      <div class="wrap">
+        <h2>Contacto</h2>
+        <p class="section__intro">La mejor forma de contactarme es por LinkedIn, donde también está mi CV completo.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="https://www.linkedin.com/in/martinacottura" target="_blank" rel="noopener">Escribime por LinkedIn</a>
+          <a class="btn btn--ghost" href="https://github.com/martina-cottura" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© 2026 Martina Cottura · Mar del Plata, Argentina</div>
+  </footer>
+
+</body>
+</html>
