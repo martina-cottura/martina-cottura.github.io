@@ -134,7 +134,7 @@ a { color: var(--clay-ink); }
 .tags li { font-family: var(--mono); font-size: 0.82rem; border-radius: 999px; padding: 2px 12px; background: var(--sage); color: var(--olive); }
 
 /* Trabajos anteriores */
-.works { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.works { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 .work {
   background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--clay);
   border-radius: var(--radius); padding: 22px; display: flex; flex-direction: column; gap: 10px;
