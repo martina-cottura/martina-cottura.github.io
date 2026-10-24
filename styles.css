@@ -217,3 +217,12 @@ a { color: var(--clay-ink); }
 /* Habilidades como fichas que fluyen: evita filas incompletas al sumar o quitar ítems */
 .skills, .skills--alt { display: flex; flex-wrap: wrap; gap: 12px; }
 .skills li { flex: 0 1 auto; padding: 12px 18px; }
+
+/* Diferencial */
+.diff { background: var(--bg); }
+.diff__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.diff__item { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; display: flex; flex-direction: column; gap: 10px; }
+.diff__n { font-family: var(--display); font-weight: 800; font-size: 2.2rem; line-height: 1; color: var(--clay); }
+.diff__item h3 { font-size: 1.3rem; }
+.diff__item p { margin: 0; color: var(--muted); }
+@media (max-width: 900px) { .diff__grid { grid-template-columns: 1fr; } }
