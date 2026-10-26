@@ -20,9 +20,9 @@
       <a class="nav__brand" href="#inicio">Martina Cottura</a>
       <nav class="nav__links" aria-label="Secciones">
         <a href="#sobre-mi">Sobre mí</a>
-        <a href="#diferencial">Diferencial</a>
         <a href="#proyectos">Proyectos</a>
-        <a href="#trabajos">Trabajos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Formación</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -46,8 +46,9 @@
         </ul>
         <p class="hero__lead">Convierto datos de clientes y ventas en decisiones comerciales.</p>
         <div class="actions">
-          <a class="btn btn--primary" href="https://github.com/martina-cottura" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn--ghost" href="https://www.linkedin.com/in/martinacottura" target="_blank" rel="noopener">CV en LinkedIn</a>
+          <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+          <!-- PENDIENTE: subir el CV en PDF a assets/ con este nombre -->
+          <a class="btn btn--ghost" href="assets/cv_martina_cottura.pdf" target="_blank" rel="noopener">Descargar CV (PDF)</a>
         </div>
       </div>
       </div>
@@ -59,9 +60,14 @@
         <h2>Sobre mí</h2>
         <div class="about__body">
           <p class="about__lead">Entender el negocio antes de analizar los datos: esa es la mirada que busco aportar como Data Analyst.</p>
+          <!-- REVISAR: el CV dice "más de 4 años" de análisis cuantitativo; dejar el mismo número en los dos lados -->
           <p>Tengo más de 8 años de experiencia en áreas comerciales y operativas (Retail &amp; B2B) y 5 años de experiencia en análisis cuantitativo. Actualmente complemento esta trayectoria con proyectos de Data Analytics, utilizando Python, SQL/MySQL, Power BI, DAX y Excel.</p>
           <p>Me interesa transformar datos en información útil para entender clientes, ventas y procesos, y contribuir a la toma de decisiones basada en datos.</p>
-          <p>Busco oportunidades en Data Analytics, Business Intelligence, Customer Analytics, análisis comercial y operaciones, de forma remota o presencial/híbrida en Mar del Plata.</p>
+          <p>Busco roles de <strong>análisis de datos comercial y de clientes</strong> (Data Analyst, BI, Customer Analytics), de forma remota o presencial/híbrida en Mar del Plata.</p>
+          <ul class="facts" aria-label="Datos rápidos">
+            <li><span>Ubicación</span>Mar del Plata, Argentina · disponible para remoto</li>
+            <li><span>Idiomas</span>Español nativo · Inglés B2 · Catalán C1</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -80,7 +86,7 @@
           <article class="diff__item">
             <span class="diff__n">02</span>
             <h3>Mirada sociológica sobre el dato</h3>
-            <p>Vengo de la sociología: pregunto cómo se construyó el dato antes de medirlo y digo qué no puede responder. En Cumbres dejé explícito que "cliente en riesgo" es un criterio para priorizar contactos, no una predicción de abandono.</p>
+            <p>Vengo de la sociología y la demografía: pregunto cómo se construyó el dato antes de medirlo y digo qué no puede responder. En Cumbres dejé explícito que "cliente en riesgo" es un criterio para priorizar contactos, no una predicción de abandono.</p>
           </article>
           <article class="diff__item">
             <span class="diff__n">03</span>
@@ -96,6 +102,27 @@
       <div class="wrap">
         <h2>Proyectos</h2>
 
+        <!-- Proyecto destacado en curso: datos reales de Frozen -->
+        <article class="project project--featured">
+          <div class="project__body">
+            <p class="badge badge--live">En curso · Datos reales anonimizados</p>
+            <h3>Rentabilidad de una distribuidora mayorista de alimentos</h3>
+            <p>Análisis con datos reales de una distribuidora B2B de congelados y snacks saludables que reparte en Mar del Plata y alrededores. Parte de los exports del sistema de ventas, desordenados como en cualquier negocio real. Los clientes están anonimizados y los montos, escalados.</p>
+            <p class="question"><span class="question__label">Pregunta de negocio</span>¿Qué productos y clientes quedan por debajo del 30% de margen neto, y qué precios conviene ajustar?</p>
+            <ol class="pipeline" aria-label="Etapas del proyecto">
+              <li class="is-active"><span class="pipeline__step">01 · Python</span>Limpieza de los exports de ventas</li>
+              <li><span class="pipeline__step">02 · MySQL</span>Modelo en esquema estrella</li>
+              <li><span class="pipeline__step">03 · Power BI</span>Margen bruto, de contribución y neto</li>
+              <li><span class="pipeline__step">04 · Decisión</span>Ajuste de precios e informe de rotación para clientes</li>
+            </ol>
+            <ul class="tags" aria-label="Herramientas">
+              <li>Python</li><li>MySQL</li><li>Power BI</li>
+            </ul>
+            <!-- PENDIENTE: reemplazar por la URL del repo de Frozen cuando exista -->
+            <a class="btn btn--primary" href="https://github.com/martina-cottura" target="_blank" rel="noopener">Ver avance</a>
+          </div>
+        </article>
+
         <!-- Para sumar un proyecto: copiar un <article class="project"> completo dentro de .projects -->
         <div class="projects">
 
@@ -109,11 +136,24 @@
               <h3>Customer Analytics · Cumbres Outdoor &amp; Deportes</h3>
               <p>Análisis de clientes de un retailer deportivo ficticio, con datos sintéticos que simulan los registros de un ERP y un CRM, período <span class="nowrap">2023-2025</span>.</p>
               <p class="question"><span class="question__label">Pregunta de negocio</span>¿Cómo se distribuye el valor de la cartera de clientes y a qué clientes inactivos conviene contactar primero?</p>
-              <p class="finding"><span class="finding__label">Hallazgo clave</span>81 de los 269 clientes en riesgo concentran el 62,7% de la facturación histórica en riesgo.</p>
+              <dl class="outcomes">
+                <div>
+                  <dt>Hallazgo clave</dt>
+                  <dd>Contactando a 81 de los 269 clientes en riesgo (el 30%) se cubre el 62,7% de la facturación que está en riesgo.</dd>
+                </div>
+                <div>
+                  <dt>Recomendación</dt>
+                  <dd>Empezar la reactivación por esos 81 clientes y revisar la captación: el 9,7% de los registrados nunca compró.</dd>
+                </div>
+              </dl>
               <ul class="tags" aria-label="Herramientas">
                 <li>Python</li><li>MySQL</li><li>Power BI</li><li>DAX</li>
               </ul>
-              <a class="btn btn--primary" href="https://github.com/martina-cottura/customer_analytics_retail_Python-Mysql-PowerBI" target="_blank" rel="noopener">Ver proyecto</a>
+              <div class="actions">
+                <a class="btn btn--primary" href="https://github.com/martina-cottura/customer_analytics_retail_Python-Mysql-PowerBI" target="_blank" rel="noopener">Ver proyecto</a>
+                <!-- PENDIENTE: link al dashboard publicado o al informe de negocio en PDF -->
+                <a class="btn btn--ghost" href="https://github.com/martina-cottura/customer_analytics_retail_Python-Mysql-PowerBI" target="_blank" rel="noopener">Ver dashboard</a>
+              </div>
             </div>
           </article>
 
@@ -127,7 +167,16 @@
               <h3>Mercado de Airbnb en Barcelona 2025</h3>
               <p>Proyecto integrador del bootcamp de Unicorn Academy, en equipo, con datos públicos reales que Inside Airbnb obtiene por web scraping (septiembre de 2025).</p>
               <p class="question"><span class="question__label">Pregunta de negocio</span>¿Cuál es la dimensión y la composición del mercado de Airbnb en Barcelona en volumen, precios, tipo de alojamiento y cumplimiento de licencias?</p>
-              <p class="finding"><span class="finding__label">Hallazgo clave</span>El 91,2% de los anuncios es de hosts con más de un anuncio, y el 59,6% está en Eixample y Ciutat Vella.</p>
+              <dl class="outcomes">
+                <div>
+                  <dt>Hallazgo clave</dt>
+                  <dd>El 91,2% de los anuncios es de hosts con más de un anuncio, y el 59,6% está en Eixample y Ciutat Vella.</dd>
+                </div>
+                <div>
+                  <dt>Mi aporte</dt>
+                  <dd><span class="todo">PENDIENTE: qué parte hiciste vos (limpieza, modelo, dashboard…)</span></dd>
+                </div>
+              </dl>
               <ul class="tags" aria-label="Herramientas">
                 <li>Python</li><li>MySQL</li><li>Power BI</li><li>DAX</li>
               </ul>
@@ -139,13 +188,18 @@
       </div>
     </section>
 
-    <!-- 4. Trabajos anteriores -->
-    <section id="trabajos" class="section">
+    <!-- 4. Experiencia en investigación y datos -->
+    <section id="experiencia" class="section">
       <div class="wrap">
-        <h2>Trabajos anteriores</h2>
-        <p class="section__intro">Análisis de datos en investigación social y de mercado.</p>
+        <h2>Experiencia en investigación y datos</h2>
+        <p class="section__intro">Relevamiento, análisis y comunicación de datos en investigación social y de mercado.</p>
         <!-- Para sumar un trabajo: copiar un <article class="work"> -->
         <div class="works">
+          <article class="work">
+            <h3>Censo Nacional 2022 · INDEC</h3>
+            <p class="work__meta">2022</p>
+            <p>Coordinación del trabajo de campo del Censo Nacional de Población, Hogares y Viviendas. <span class="todo">PENDIENTE: escala (censistas o radios a cargo) y una tarea de control de calidad</span></p>
+          </article>
           <article class="work">
             <h3>Chicas en Tecnología · La brecha que persiste</h3>
             <p class="work__meta">2023 – 2024 · Remoto</p>
@@ -168,8 +222,32 @@
       </div>
     </section>
 
-    <!-- 5. Habilidades -->
-    <section id="habilidades" class="section section--alt">
+    <!-- 5. Formación -->
+    <section id="formacion" class="section section--alt">
+      <div class="wrap">
+        <h2>Formación</h2>
+        <ul class="edu">
+          <li>
+            <span class="edu__meta">Unicorn Academy · 2025 – 2026</span>
+            <strong>Bootcamp de Data Analytics</strong>
+            <span>Python, SQL y Power BI</span>
+          </li>
+          <li>
+            <span class="edu__meta">Universidad Nacional de Rosario</span>
+            <strong>Diplomatura en Demografía</strong>
+            <span>Análisis de población y fuentes estadísticas</span>
+          </li>
+          <li>
+            <span class="edu__meta">Universidad Nacional de Mar del Plata</span>
+            <strong>Licenciatura en Sociología</strong>
+            <span>Metodología cuantitativa y tesis con microdatos de la EPH</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Habilidades -->
+    <section id="habilidades" class="section">
       <div class="wrap">
         <h2>Habilidades</h2>
         <h3 class="skills__title">Análisis de datos</h3>
@@ -177,7 +255,10 @@
           <li>Python (pandas)</li>
           <li>SQL (MySQL)</li>
           <li>Power BI (modelado y DAX)</li>
+          <li>Modelado en esquema estrella</li>
           <li>Excel y Google Sheets</li>
+          <li>SPSS</li>
+          <li>Git y GitHub</li>
           <li>Calidad y validación de datos</li>
           <li>Comunicación de resultados a negocio</li>
         </ul>
@@ -189,18 +270,21 @@
           <li>Entender el contexto en el que se construye el dato</li>
           <li>Construcción de variables</li>
           <li>Análisis de comportamiento y segmentación</li>
-          <li>Diseño metodológico</li>
+          <li>Diseño metodológico y de encuestas</li>
         </ul>
       </div>
     </section>
 
-    <!-- 6. Contacto -->
-    <section id="contacto" class="section contact">
+    <!-- 7. Contacto -->
+    <section id="contacto" class="section section--alt contact">
       <div class="wrap">
         <h2>Contacto</h2>
-        <p class="section__intro">La mejor forma de contactarme es por LinkedIn, donde también está mi CV completo.</p>
+        <p class="section__intro">Podés escribirme por mail o por LinkedIn. Mi CV completo está en PDF.</p>
         <div class="actions">
-          <a class="btn btn--primary" href="https://www.linkedin.com/in/martinacottura" target="_blank" rel="noopener">Escribime por LinkedIn</a>
+          <!-- PENDIENTE: confirmar el mail que querés mostrar -->
+          <a class="btn btn--primary" href="mailto:CORREO@PENDIENTE">Escribime un mail</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/martinacottura" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn--ghost" href="assets/cv_martina_cottura.pdf" target="_blank" rel="noopener">CV (PDF)</a>
           <a class="btn btn--ghost" href="https://github.com/martina-cottura" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
